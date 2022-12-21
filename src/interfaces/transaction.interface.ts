@@ -1,8 +1,8 @@
 import { Money } from './money.interface';
-import { TransactionType } from './transaction-type.interface';
 
 export interface Transaction {
+  origin: string;
   amount: Money;
-  type: TransactionType;
+  type: string;
   description: string;
 }
