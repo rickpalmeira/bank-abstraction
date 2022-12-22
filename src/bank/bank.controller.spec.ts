@@ -71,13 +71,13 @@ describe('BankController', () => {
     expect(controller).toBeDefined();
   });
 
-  describe('/bank/', () => {
+  describe('api/bank/', () => {
     it('should fetch a list of banks', async () => {
       expect(await controller.getBanks()).toStrictEqual(await mockBanks());
     });
   });
 
-  describe('/bank/balances/', () => {
+  describe('api/bank/balances/', () => {
     it('should fetch a list of balances', async () => {
       expect(await controller.getBalances()).toStrictEqual(
         await mockBalances(),
@@ -85,7 +85,7 @@ describe('BankController', () => {
     });
   });
 
-  describe('/bank/transactions', () => {
+  describe('api/bank/transactions', () => {
     it('should fetch a list of transactions', async () => {
       expect(await controller.getTransactions()).toStrictEqual(
         await mockTransactions(),
