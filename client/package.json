@@ -9,9 +9,11 @@
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "axios": "^1.2.1",
     "core-js": "^3.8.3",
     "roboto-fontface": "*",
     "vue": "^2.6.14",
+    "vue-axios": "^3.5.2",
     "vuetify": "^2.6.0"
   },
   "devDependencies": {
@@ -31,13 +33,21 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "plugin:vue/recommended",
+      "plugin:prettier/recommended"
     ],
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "vue/valid-v-slot": [
+        "error",
+        {
+          "allowModifiers": true
+        }
+      ]
+    }
   },
   "browserslist": [
     "> 1%",
