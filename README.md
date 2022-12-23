@@ -88,7 +88,7 @@ http://localhost:3000/api/bank/balances # Name, current balance and currency use
 http://localhost:3000/api/bank/transactions # History of transactions on said banks
 ```
 
-as well as one URL to access the application:
+as well as a URL to access the application:
 
 ```bash
 http://localhost:3000/
